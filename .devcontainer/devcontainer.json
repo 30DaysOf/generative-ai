@@ -1,0 +1,49 @@
+// For format details, see https://aka.ms/devcontainer.json.
+// For config options, see https://github.com/devcontainers/templates/tree/main/src/universal
+{
+
+	// Configure dev container environment 
+	"name" : "#30DaysOf Generative AI",
+		"build": {
+		"dockerfile": "Dockerfile",
+			"context": ".."
+	},
+
+	// TODO: Validate these host requirements
+	"hostRequirements": {
+		"cpus": 4,
+			"memory": "4gb",
+				"storage": "64gb"
+	},
+
+	// Set *default* container specific settings.json values on container create.
+	"waitFor": "onCreateCommand",
+	"postCreateCommand": "cd docs && npm install && npx docusaurus start",
+
+	// Configure tool-specific properties.
+	"customizations": {
+
+		"codespaces": {
+			"openFiles": []
+		},
+
+		// TODO: Remove unused extensions
+		"vscode": {
+			"extensions": [
+				"ms-toolsai.jupyter",
+				"ms-python.python",
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"github.vscode-github-actions",
+                "ms-azuretools.azure-dev",
+                "prompt-flow.prompt-flow",
+                "ms-toolsai.prompty"
+			]
+		}
+
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {}
+	}
+
+}

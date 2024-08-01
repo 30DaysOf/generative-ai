@@ -1,0 +1,16 @@
+# Python Development
+ipywidgets
+nbconvert
+
+# NLP Tests
+redlines
+
+# Open AI 
+openai
+
+# Hugging Face 
+transformers
+huggingface-hub
+
+# Azure Tools/SDKs
+

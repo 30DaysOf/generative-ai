@@ -1,0 +1,8 @@
+{
+  "label": "Explore - Models",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn about the Hugging Face platform. Deploy & use Hugging Face models from the Azure AI Model Catalog"
+  }
+}

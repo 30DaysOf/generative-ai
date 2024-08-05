@@ -82,7 +82,7 @@ const config: Config = {
           position: 'left',
           label: 'Tutorials',
         },
-        {to: '/blog', label: 'Roundups', position: 'right'},
+  //        {to: '/blog', label: 'Blog', position: 'right'},
         {to: 'https://aka.ms/ai-studio/collection', label: 'Collection', position: 'right'},
         {
           href: 'https://github.com/30daysof/generative-ai',
@@ -118,7 +118,7 @@ const config: Config = {
         },
       ],
     },
-    
+
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,

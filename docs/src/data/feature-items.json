@@ -1,7 +1,7 @@
 [
     {
         "title": "Hugging Face",
-        "imagePath": "/img/logo.png",
+        "imagePath": "/img/hf-logo.png",
         "description": "Hugging Face is a community & platform for open-source models and datasets for AI development."
     },
     {
@@ -11,7 +11,7 @@
     },
     {
         "title": "Open AI ",
-        "imagePath": "/img/logo.png",
+        "imagePath": "/img/openai-logo.png",
         "description": "Open AI is the research and development company behind GPT models and solutions."
     }
 ]

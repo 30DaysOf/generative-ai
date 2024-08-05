@@ -1,4 +1,4 @@
-# Website
+# Website Setup
 
 ## 1 | Setup
 

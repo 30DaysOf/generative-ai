@@ -6,12 +6,12 @@ const config: Config = {
 
   // Add custom fields for site-wide context
   customFields: {
-      description: 'Go from generative AI concepts to applied AI solutions in #30DaysOf learning by doing. Build knowledge using open-source models and platforms, then learn to operationalize with cloud deployment and integrations.'
+      description: 'Learn generative AI concepts from the ground up. Complete quickstart tutorials. Tear down open-source projects. Week-long sprrints. 30-day roadmaps.'
   },
 
   // Pre-defined site-wide context fields
-  title: 'Applied AI',
-  tagline: 'Build it up﹒Break it down﹒Make it better',
+  title: 'Deconstructing AI',
+  tagline: 'Build it up · Break it down · Make it better.',
   favicon: 'img/logo.png',
 
   url: 'https://30daysof.github.io',
@@ -56,74 +56,69 @@ const config: Config = {
   ],
 
   themeConfig: {
+
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
+    },
+
     navbar: {
-      title: 'My Site',
+
+      title: 'Deconstructing AI',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Deconstructing AI Logo',
         src: 'img/logo.png',
       },
+      style: 'primary',
+
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Tutorials',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/blog', label: 'Roundups', position: 'right'},
+        {to: 'https://aka.ms/ai-studio/collection', label: 'Collection', position: 'right'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          href: 'https://github.com/30daysof/generative-ai',
           position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
         },
       ],
     },
+
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
+          label: `Azure AI Collection`,
+          to: "https://aka.ms/ai-studio/collection",
         },
         {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
+          label: `Responsible AI Collection`,
+          to: "https://aka.ms/rai-hub/collection",
         },
         {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
+          label: `AI Developer Hub`,
+          to: "https://learn.microsoft.com/ai/",
+        },
+        {
+          label: 'Azure AI Discord',
+          to: 'https://discord.gg/yrTeVQwpWm',
+        },
+        {
+          label: `© ${new Date().getFullYear()} Nitya Narasimhan`,
+          to: "https://github.com/nitya",
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
+    
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,

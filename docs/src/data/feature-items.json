@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Hugging Face",
+        "imagePath": "/img/logo.png",
+        "description": "Hugging Face is a community & platform for open-source models and datasets for AI development."
+    },
+    {
+        "title": "Azure AI",
+        "imagePath": "/img/logo.png",
+        "description": "Azure AI is a unified platform for end-to-end development of generative AI apps on Azure."
+    },
+    {
+        "title": "Open AI ",
+        "imagePath": "/img/logo.png",
+        "description": "Open AI is the research and development company behind GPT models and solutions."
+    }
+]

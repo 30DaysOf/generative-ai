@@ -3,27 +3,28 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  // Add custom fields for site-wide context
+  customFields: {
+      description: 'Go from generative AI concepts to applied AI solutions in #30DaysOf learning by doing. Build knowledge using open-source models and platforms, then learn to operationalize with cloud deployment and integrations.'
+  },
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  // Pre-defined site-wide context fields
+  title: 'Applied AI',
+  tagline: 'Build it up﹒Break it down﹒Make it better',
+  favicon: 'img/logo.png',
+
+  url: 'https://30daysof.github.io',
+  baseUrl: '/generative-ai/',
+  trailingSlash: false,
+
+  organizationName: '30daysof',  // -- For GitHub Usage
+  projectName: 'generative-ai', 
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -61,7 +62,7 @@ const config: Config = {
       title: 'My Site',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo.png',
       },
       items: [
         {

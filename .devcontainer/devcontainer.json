@@ -38,7 +38,8 @@
 				"ms-azuretools.azure-dev",
 				"prompt-flow.prompt-flow",
 				"ms-toolsai.prompty",
-				"ms-playwright.playwright"
+				"ms-playwright.playwright",
+				"esbenp.prettier-vscode"
 			]
 		}
 

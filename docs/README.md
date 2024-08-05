@@ -10,7 +10,8 @@ npx create-docusaurus@latest docs classic
 
 ## 2 | Commands
 
-Run these commands using the Visual Studio Code terminal after first changing directory to `docs/`:
+Open the VS Code terminal and change to the `docs/` directory. Run `npm install` to get local environment setup first. Then use the following commands for development:
+
 
 | Command | Description |
 |---------|-------------|
@@ -42,7 +43,12 @@ Some additional notes:
     - [cookie-consent](https://github.com/68publishers/cookie-consent) widget for GTM - with [usage hints](https://docusaurus.canny.io/feature-requests/p/cookie-consent-component).
     - [react-cookie-consent](https://www.npmjs.com/package/react-cookie-consent) package - with [usage tutorial](https://medium.com/@fokke_79992/cookie-consent-and-docusaurus-932aaef27d61)
 
+Let's get these configured in order!
+
 ### 3.1 Styling: `src/css/custom.css`
+
+1. Use the [Styling with Infima](https://docusaurus.io/docs/styling-layout#styling-your-site-with-infima) tool to pick color palettes for dark and light modes to customize the `src/css/custom.css` file defaults.
+1. Update the `static/img/logo.svg` file with your desired new logo - and update the relevant logo references in the repository (search/replace) to use updated logo.
 
 ### 3.2 Site Config: `docusaurus.config.js`
 
@@ -51,6 +57,9 @@ Relevant references:
 ### 3.3 Docs Sidebar: `sidebars.js`
 
 ### 3.4 Docs & Pages: `src/`
+
+1. The Homepage layout is defined in `src/pages/index.tsx` - and has a `<HomepageHeader>` (hero element) and `HomepageFeatures` (main body) as the core components.
+1. The HomepageFeatures component is defined in `src/components/HomepageFeatures.tsx` - and is a grid of cards with icons, titles and descriptions. _Refactored this to load data from a JSON file in `src/data/features.json` and use image paths instead of SVGs._
 
 ### 3.5 Blog: `blog/`
 

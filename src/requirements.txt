@@ -13,4 +13,5 @@ transformers
 huggingface-hub
 
 # Azure Tools/SDKs
-
+azure-ai-ml
+azure-identity

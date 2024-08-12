@@ -9,12 +9,9 @@
 			"context": ".."
 	},
 
-	// TODO: Validate these host requirements
-	"hostRequirements": {
-		"cpus": 4,
-			"memory": "4gb",
-				"storage": "64gb"
-	},
+	// TODO: Validate these host requirements 
+	// Commented out else it eats up quota fast
+	// "hostRequirements": { "cpus": 4, "memory": "4gb", "storage": "64gb" },
 
 	// Set *default* container specific settings.json values on container create.
 	"waitFor": "onCreateCommand",
